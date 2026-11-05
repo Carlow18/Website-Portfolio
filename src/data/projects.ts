@@ -5,6 +5,7 @@ export type Project = {
   role: string;
   date: string;
   badge: string;
+  image: string;
   summary: string;
   overview: string;
   highlights: string[];
@@ -23,6 +24,7 @@ export const projects: Project[] = [
     role: "Full-Stack & Mobile Developer (Lead Contributor)",
     date: "Jan 2026 – Jun 2026",
     badge: "Thesis Project",
+    image: "/projects/getgains-logo.png",
     summary:
       "A Flutter fitness app with an Express.js backend that uses on-device pose detection and an embedded Unity 3D avatar to compare a client's exercise form against a coach's.",
     overview:
@@ -54,6 +56,7 @@ export const projects: Project[] = [
     role: "Full-Stack Developer",
     date: "Oct 2024 – May 2025",
     badge: "Real Client",
+    image: "/projects/cpu-pmp.jpg",
     summary:
       "A Next.js web app built for a real client, the VPAA of Central Philippine University, featuring a drag-and-drop Kanban board, inventory management and role-based access.",
     overview:
@@ -82,6 +85,7 @@ export const projects: Project[] = [
     role: "Full-Stack Developer",
     date: "Apr 2025 – Jul 2025",
     badge: "Student Startup",
+    image: "/projects/baylocentral-logo.png",
     summary:
       "A student-led startup building a centralized e-commerce platform for micro, small and medium enterprises in our province.",
     overview:

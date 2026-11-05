@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ArrowLeft, ExternalLink, Lock } from "lucide-react";
@@ -42,13 +43,35 @@ export default async function ProjectPage({
         </Link>
 
         <div className={`mt-6 rounded-2xl border border-zinc-200/80 bg-gradient-to-br ${p.gradient} p-8 shadow-xs sm:p-10 dark:border-zinc-800 dark:from-zinc-900/90 dark:via-zinc-900/50 dark:to-zinc-950`}>
-          <span className="inline-flex items-center rounded-full border border-zinc-200 bg-white/90 px-3 py-1 font-mono text-xs font-medium text-zinc-700 shadow-xs backdrop-blur-xs dark:border-zinc-700/80 dark:bg-zinc-800/90 dark:text-zinc-300">
-            {p.badge}
-          </span>
-          <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-zinc-950 sm:text-4xl dark:text-zinc-100">
-            {p.title}
-          </h1>
-          <p className="mt-2 text-base text-zinc-600 sm:text-lg dark:text-zinc-400">{p.subtitle}</p>
+          <div className="flex flex-col-reverse justify-between gap-6 sm:flex-row sm:items-center">
+            <div>
+              <span className="inline-flex items-center rounded-full border border-zinc-200 bg-white/90 px-3 py-1 font-mono text-xs font-medium text-zinc-700 shadow-xs backdrop-blur-xs dark:border-zinc-700/80 dark:bg-zinc-800/90 dark:text-zinc-300">
+                {p.badge}
+              </span>
+              <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-zinc-950 sm:text-4xl dark:text-zinc-100">
+                {p.title}
+              </h1>
+              <p className="mt-2 text-base text-zinc-600 sm:text-lg dark:text-zinc-400">{p.subtitle}</p>
+            </div>
+
+            {p.image && (
+              <div className="shrink-0">
+                <Image
+                  src={p.image}
+                  alt={`${p.title} logo`}
+                  width={140}
+                  height={140}
+                  className={`transition-transform duration-300 ${
+                    p.slug === "cpu-pmp"
+                      ? "max-h-28 w-auto rounded-lg border border-zinc-200/80 object-cover shadow-sm dark:border-zinc-700/80"
+                      : p.slug === "baylocentral"
+                      ? "h-24 w-24 object-contain drop-shadow-lg"
+                      : "max-h-28 w-auto object-contain drop-shadow-lg"
+                  }`}
+                />
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="mt-8 flex flex-wrap gap-x-8 gap-y-2 border-y border-zinc-200/80 py-3 font-mono text-xs text-zinc-600 dark:border-zinc-800 dark:text-zinc-400">
