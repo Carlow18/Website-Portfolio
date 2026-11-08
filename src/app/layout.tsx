@@ -18,22 +18,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body className="relative min-h-screen bg-bg text-fg antialiased selection:bg-zinc-200 selection:text-zinc-950 dark:selection:bg-zinc-800 dark:selection:text-zinc-100">
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  var saved = localStorage.getItem('theme');
-                  var isDark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
-                  if (isDark) document.documentElement.classList.add('dark');
-                  else document.documentElement.classList.remove('dark');
-                } catch (e) {}
-              })();
-            `,
-          }}
-        />
         <ThemeProvider>
           <SpotlightBackground />
           <SmoothScroll>

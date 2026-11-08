@@ -25,7 +25,7 @@ export default function SpotlightBackground() {
     return () => window.removeEventListener("pointermove", handlePointerMove);
   }, [mouseX, mouseY]);
 
-  const isDark = mounted && resolvedTheme === "dark";
+  const isDark = mounted ? resolvedTheme === "dark" : true;
 
   return (
     <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">

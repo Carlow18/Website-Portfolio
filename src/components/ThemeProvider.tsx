@@ -14,16 +14,16 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>("light");
-  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">("light");
+  const [theme, setThemeState] = useState<Theme>("dark");
+  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">("dark");
 
   useEffect(() => {
     const saved = localStorage.getItem("theme") as Theme | null;
-    const initial = saved || "light";
+    const initial: Theme = saved || "dark";
     setThemeState(initial);
 
     const updateTheme = (t: Theme) => {
-      let resolved: "light" | "dark" = "light";
+      let resolved: "light" | "dark" = "dark";
       if (t === "system") {
         resolved = window.matchMedia("(prefers-color-scheme: dark)").matches
           ? "dark"
@@ -44,7 +44,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
     const handler = () => {
-      const current = (localStorage.getItem("theme") as Theme) || "light";
+      const current = (localStorage.getItem("theme") as Theme) || "dark";
       if (current === "system") updateTheme("system");
     };
 
