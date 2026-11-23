@@ -60,14 +60,14 @@ export const projects: Project[] = [
     summary:
       "A Next.js web app built for a real client, the VPAA of Central Philippine University, featuring a drag-and-drop Kanban board, inventory management and role-based access.",
     overview:
-      "A web application built for a real client, the Vice President for Academic Affairs of Central Philippine University, to manage service requests, implementation plans, personnel and equipment inventory. I worked in a 4-person team using Git and GitHub from requirements gathering through client handoff.",
+      "A web application built for a real client, the Vice President for Academic Affairs of Central Philippine University, to manage service requests, implementation plans, personnel and equipment inventory. I coordinated codebase collaboration in a 4-person team using Git and GitHub, maintaining a clean version history from requirements gathering through client handoff.",
     highlights: [
-      "Built a drag-and-drop Kanban board from scratch with optimistic UI updates and backend status persistence via Prisma/PostgreSQL.",
-      "Developed an equipment inventory module with CRUD operations, server-side pagination, office filtering and inventory reports.",
+      "Built a drag-and-drop Kanban board from scratch with optimistic UI updates and backend status persistence via Prisma/PostgreSQL, improving task dashboard usability.",
+      "Developed an equipment inventory module with CRUD operations, server-side pagination, department filtering and inventory reports.",
       "Implemented role-based access control for admin, supervisor and secretary roles, including role-based redirects and admin-only actions.",
       "Built login and registration with bcrypt password hashing and CPU-email-only validation, plus user and personnel management with pagination and filters.",
       "Added service-request archiving with auto-archive, a details modal and delete.",
-      "Established end-to-end testing with Selenium WebDriver, plus integration test suites for core service-request workflows.",
+      "Established end-to-end testing infrastructure with Selenium WebDriver, authoring E2E and integration test suites for core service-request workflows.",
     ],
     stack: [
       { group: "Frontend", items: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS", "shadcn/ui", "Redux Toolkit", "TanStack Query", "dnd-kit"] },
