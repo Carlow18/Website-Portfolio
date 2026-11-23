@@ -21,7 +21,7 @@ export default function Contact() {
       <Reveal>
         <div className="card mx-auto max-w-xl p-8 text-center sm:p-10">
           <p className="text-base leading-relaxed text-zinc-600 sm:text-lg dark:text-zinc-400">
-            I&apos;m currently open to full-time engineering roles, internships, and freelance projects.
+            I&apos;m currently open to full-time software engineering, automation developer roles, and freelance projects.
             Feel free to reach out directly.
           </p>
 
