@@ -7,7 +7,11 @@ export default function Skills() {
     <Section id="skills" eyebrow="04 / Skills" title="Technical toolkit">
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {skills.map((s, i) => (
-          <Reveal key={s.group} delay={i * 0.05}>
+          <Reveal
+            key={s.group}
+            delay={i * 0.05}
+            className={i === skills.length - 1 ? "sm:col-span-2" : undefined}
+          >
             <div className="card h-full p-5 sm:p-6">
               <h3 className="text-sm font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
                 {s.group}
