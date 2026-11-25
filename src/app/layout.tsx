@@ -5,13 +5,13 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "John Carlo Macoco | Full-Stack Software Engineer & Automation Developer",
+  title: "John Carlo Macoco | AI-Native Full-Stack Software Engineer",
   description:
-    "Portfolio of John Carlo C. Macoco, a full-stack software engineer and automation developer from Iloilo City building API-driven integrations, CRM/headless CMS workflows (WordPress, GoHighLevel, HubSpot, Stripe, n8n), and scalable Next.js, Express.js, PostgreSQL, and Flutter applications.",
+    "Portfolio of John Carlo C. Macoco, an AI-native full-stack software engineer from Iloilo City orchestrating AI coding agents to ship Next.js, Express.js, PostgreSQL, Flutter, and CRM/payment integration (Stripe, HubSpot, GoHighLevel, n8n) applications.",
   openGraph: {
-    title: "John Carlo Macoco | Full-Stack Software Engineer & Automation Developer",
+    title: "John Carlo Macoco | AI-Native Full-Stack Software Engineer",
     description:
-      "API-driven integrations, CRM & workflow automation (WordPress, GoHighLevel, HubSpot, Stripe, n8n), plus Next.js, Express.js, PostgreSQL, Prisma, and Flutter projects.",
+      "AI-native full-stack engineering with parallel coding agents, MCP workflows, Next.js, Express.js, PostgreSQL, Prisma, Flutter, and Stripe/HubSpot/GoHighLevel/n8n integrations.",
     type: "website",
   },
   icons: { icon: "/avatar.png" },

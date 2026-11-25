@@ -1,9 +1,9 @@
 export const profile = {
   name: "John Carlo C. Macoco",
   shortName: "Carlo",
-  title: "Full-Stack Software Engineer & Automation Developer",
+  title: "AI-Native Full-Stack Software Engineer",
   tagline:
-    "Full-Stack Software Engineer and Automation Developer with hands-on experience building API-driven integrations, CRM/headless CMS workflows (WordPress, GoHighLevel, HubSpot, Stripe), and AI-integrated applications. Proficient in JavaScript/TypeScript, RESTful APIs, JSON, SQL, webhooks, OAuth 2.0, and n8n workflow automation — taking end-to-end ownership to streamline lead capture, automate operations, and deliver scalable, client-facing systems.",
+    "AI-native Full-Stack Software Engineer experienced in orchestrating AI coding agents to ship production software: running parallel frontend and backend agents and enforcing quality through code review and automated test suites. Model-agnostic across Antigravity, GitHub Copilot, and OpenCode (DeepSeek, GLM, Kimi), with internship experience building Next.js, Express.js, PostgreSQL, and CRM/payment integrations (Stripe, HubSpot, GoHighLevel).",
   location: "Iloilo City, Philippines",
   email: "johncarlomacoco@gmail.com",
   github: "https://github.com/Carlow18",
@@ -11,19 +11,19 @@ export const profile = {
   avatar: "/avatar.png",
   resume: "/John-Carlo-Macoco-Resume.pdf",
   summary:
-    "Full-Stack Software Engineer and Automation Developer with hands-on experience building API-driven integrations, CRM/headless CMS workflows (WordPress, GoHighLevel, HubSpot, Stripe), and AI-integrated applications. Proficient in JavaScript/TypeScript, RESTful APIs, JSON, SQL, webhooks, OAuth 2.0, and n8n workflow automation — taking end-to-end ownership to streamline lead capture, automate operations, and deliver scalable, client-facing systems.",
+    "AI-native Full-Stack Software Engineer experienced in orchestrating AI coding agents to ship production software: running parallel frontend and backend agents and enforcing quality through code review and automated test suites. Model-agnostic across Antigravity, GitHub Copilot, and OpenCode (DeepSeek, GLM, Kimi), with internship experience building Next.js, Express.js, PostgreSQL, and CRM/payment integrations (Stripe, HubSpot, GoHighLevel).",
   facts: [
     { label: "Based in", value: "Iloilo City, PH" },
     { label: "Degree", value: "BS Software Engineering" },
     { label: "University", value: "Central Philippine University" },
-    { label: "Graduated", value: "August 2026" },
+    { label: "Graduated", value: "Aug 2026" },
   ],
 };
 
 export const education = {
   school: "Central Philippine University",
   degree: "Bachelor of Science in Software Engineering",
-  date: "August 2026",
+  date: "Aug 2026",
   coursework: [
     "Data Structures",
     "Algorithms",
@@ -34,4 +34,3 @@ export const education = {
     "Machine Learning",
   ],
 };
-
