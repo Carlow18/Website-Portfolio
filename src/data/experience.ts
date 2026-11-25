@@ -5,6 +5,7 @@ export type ExperienceItem = {
   role: string;
   date: string;
   badge: string;
+  image?: string;
   team: string;
   summary: string;
   overview: string;
@@ -24,6 +25,7 @@ export const experience: ExperienceItem[] = [
     role: "Full-Stack Developer Intern",
     date: "May 2026 – Jul 2026",
     badge: "Internship",
+    image: "/experience/allutional-logo.png",
     team: "10+ person engineering team",
     summary:
       "Delivered 5 tracked feature sets across a multi-tenant InsurTech platform with Next.js, Express.js, Headless WordPress, GoHighLevel, HubSpot, and Stripe.",
@@ -56,7 +58,7 @@ export const experience: ExperienceItem[] = [
       "Stripe",
       "Webhooks",
     ],
-    gradient: "from-emerald-50/70 via-slate-50 to-white",
+    gradient: "from-sky-50/80 via-slate-50 to-white",
     note: "This work was completed on a proprietary platform; the source code is in a private repository.",
   },
 ];

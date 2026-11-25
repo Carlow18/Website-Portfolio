@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ArrowLeft, Briefcase, Lock } from "lucide-react";
@@ -55,9 +56,22 @@ export default async function ExperiencePage({
               <p className="mt-2 text-base text-zinc-600 sm:text-lg dark:text-zinc-400">{e.context}</p>
             </div>
 
-            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-zinc-200/90 bg-white/90 text-zinc-800 shadow-xs backdrop-blur-xs dark:border-zinc-700/80 dark:bg-zinc-800/90 dark:text-zinc-200">
-              <Briefcase size={28} />
-            </div>
+            {e.image ? (
+              <div className="w-fit shrink-0 rounded-xl border border-zinc-200/80 bg-white px-4 py-2.5 shadow-sm dark:border-zinc-700/80">
+                <Image
+                  src={e.image}
+                  alt={`${e.company} logo`}
+                  width={150}
+                  height={86}
+                  priority
+                  className="h-auto w-32 object-contain sm:w-36"
+                />
+              </div>
+            ) : (
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-zinc-200/90 bg-white/90 text-zinc-800 shadow-xs backdrop-blur-xs dark:border-zinc-700/80 dark:bg-zinc-800/90 dark:text-zinc-200">
+                <Briefcase size={28} />
+              </div>
+            )}
           </div>
         </div>
 
